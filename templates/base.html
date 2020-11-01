@@ -1,6 +1,11 @@
 <!--templates/base.html-->
-
+{% block navbar %}
 <header>
     <a href="{% url 'home' %}">Home</a> |
+    <a href="{% url 'aboutme' %}">About Me</a>
     
 </header>
+<div>
+    {% block content %} {% endblock %}
+</div>
+{% endblock %}
