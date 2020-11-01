@@ -9,3 +9,4 @@ from django.views.generic import TemplateView
 
 class CalculationViewTemplate(TemplateView):
     template_name = "pages/calc.html"
+    num =100

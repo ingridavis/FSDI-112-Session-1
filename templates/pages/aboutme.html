@@ -1,15 +1,20 @@
+{% extends 'base.html' %}
 
-<h1> About me </h1>
+{% block title %} About Me {% endblock title %}
 
-<h2>Name: Ingrid Davis</h2>
-
-{% load static %}
-<img src="{% static "pages/me.jpg" %}" alt="My image">
-
-
+{% block content %}
 <div>
-    <h2>Hobbies:</h2>
-    <br>
-    <li>Outdoor stuff</li>
-    <li>Photography</li>
+    <h2>Name: Ingrid Davis</h2>
+
+    {% load static %}
+    <img src={% static "pages/me.jpg" %}>
+    
+
+    <div>
+        <h2>Hobbies:</h2>
+        <br>
+        <li>Outdoor stuff</li>
+        <li>Photography</li>
+    </div>
 </div>
+{% endblock content %}
